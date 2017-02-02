@@ -16,4 +16,8 @@ What are some situations when branches would be helpful in keeping your history 
 
 How do the diagrams help you visualize the branch structure?
 
-	Diagrams help visualize the structure by adding form to the commands on the command line. We can know how to proceed with a commit based on where we are and what we want to do. For example, if we checkout a previous commit and then commit changes from that location we will create an unreachable commit, since we are in detatched head state and the new commit will not be in one of our current branches. 
+	Diagrams help visualize the structure by adding form to the commands on the command line. We can know how to proceed with a commit based on where we are and what we want to do. For example, if we checkout a previous commit and then commit changes from that location we will create an unreachable commit, since we are in detatched head state and the new commit will not be in one of our current branches.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	When we merge two branches together we are actually merging one branch into another branch. For example we might be merging a new feature branch into the master branch to add the new feature to the currently working project. When there is merge, the new commit at the merge points back to both branches and both are reachable from the merge. At this point we can delete the branch that we merged to the master branch since this is just a label and we are still connected to this branches commits at the merged location. 
