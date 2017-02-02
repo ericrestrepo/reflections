@@ -13,3 +13,7 @@ How can you use the staging area to make sure you have one commit per logical ch
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 	Branches can be helpful in many different situations where you want to try out an experimental version of the project you are building and don't yet want the changes to affect the current version that is running. Some examples would be if you wanted to create and easier version of a game or if you wanted to create a version of your project in another language, etc.
+
+How do the diagrams help you visualize the branch structure?
+
+	Diagrams help visualize the structure by adding form to the commands on the command line. We can know how to proceed with a commit based on where we are and what we want to do. For example, if we checkout a previous commit and then commit changes from that location we will create an unreachable commit, since we are in detatched head state and the new commit will not be in one of our current branches. 
