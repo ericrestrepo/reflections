@@ -6,3 +6,6 @@ How is the staging area different from the working directory and the repository?
 
 	The staging area is an intermediate place to put files before you are ready to commit them. It offers value in that it creates a double check point to make sure you are commiting the right changes in the particulare commit you want to make and that there is a logical reason.
 
+How can you use the staging area to make sure you have one commit per logical change?
+
+	Before you have staged a file that you want to commit, you can use 'git diff' command to see the changes between the currecnt working directory and the staging area. Also, when you have staged a file that you want to commit, you can see the changes you are making before you commit by using 'git diff --staged'
