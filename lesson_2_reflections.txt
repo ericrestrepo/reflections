@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	When you initialize a repository there is a hidden file that gets created which is called .git. Having this file allow use of all of the functions of git like commits, branching, using git diff to compare two commits and get log to view a log of all commits for the current branch.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	The staging area is an intermediate place to put files before you are ready to commit them. It offers value in that it creates a double check point to make sure you are commiting the right changes in the particulare commit you want to make and that there is a logical reason.
+
