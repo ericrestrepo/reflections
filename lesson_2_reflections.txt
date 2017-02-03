@@ -1,27 +1,64 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-	When you initialize a repository there is a hidden file that gets created which is called .git. Having this file allow use of all of the functions of git like commits, branching, using git diff to compare two commits and get log to view a log of all commits for the current branch.
+	When you initialize a repository there is a hidden file that gets 
+	created which is called .git. Having this file allow use of all of 
+	the functions of git like commits, branching, using git diff to 
+	compare two commits and get log to view a log of all commits for 
+	the current branch.
 
-How is the staging area different from the working directory and the repository? What value do you think it offers?
+How is the staging area different from the working directory and the 
+repository? What value do you think it offers?
 
-	The staging area is an intermediate place to put files before you are ready to commit them. It offers value in that it creates a double check point to make sure you are commiting the right changes in the particulare commit you want to make and that there is a logical reason.
+	The staging area is an intermediate place to put files before you 
+	are ready to commit them. It offers value in that it creates a double 
+	check point to make sure you are commiting the right changes in the 
+	particulare commit you want to make and that there is a logical reason.
 
-How can you use the staging area to make sure you have one commit per logical change?
+How can you use the staging area to make sure you have one commit per 
+logical change?
 
-	Before you have staged a file that you want to commit, you can use 'git diff' command to see the changes between the currecnt working directory and the staging area. Also, when you have staged a file that you want to commit, you can see the changes you are making before you commit by using 'git diff --staged'
+	Before you have staged a file that you want to commit, you can use 
+	'git diff' command to see the changes between the currecnt working 
+	directory and the staging area. Also, when you have staged a file that 
+	you want to commit, you can see the changes you are making before you 
+	commit by using 'git diff --staged'
 
-What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help?
 
-	Branches can be helpful in many different situations where you want to try out an experimental version of the project you are building and don't yet want the changes to affect the current version that is running. Some examples would be if you wanted to create and easier version of a game or if you wanted to create a version of your project in another language, etc.
+	Branches can be helpful in many different situations where you want 
+	to try out an experimental version of the project you are building and 
+	don't yet want the changes to affect the current version that is 
+	running. Some examples would be if you wanted to create and easier 
+	version of a game or if you wanted to create a version of your project 
+	in another language, etc.
 
 How do the diagrams help you visualize the branch structure?
 
-	Diagrams help visualize the structure by adding form to the commands on the command line. We can know how to proceed with a commit based on where we are and what we want to do. For example, if we checkout a previous commit and then commit changes from that location we will create an unreachable commit, since we are in detatched head state and the new commit will not be in one of our current branches.
+	Diagrams help visualize the structure by adding form to the commands 
+	on the command line. We can know how to proceed with a commit based 
+	on where we are and what we want to do. For example, if we checkout 
+	a previous commit and then commit changes from that location we will 
+	create an unreachable commit, since we are in detatched head state 
+	and the new commit will not be in one of our current branches.
 
-What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+What is the result of merging two branches together? Why do we represent 
+it in the diagram the way we do?
 
-	When we merge two branches together we are actually merging one branch into another branch. For example we might be merging a new feature branch into the master branch to add the new feature to the currently working project. When there is merge, the new commit at the merge points back to both branches and both are reachable from the merge. At this point we can delete the branch that we merged to the master branch since this is just a label and we are still connected to this branches commits at the merged location. 
+	When we merge two branches together we are actually merging one branch 
+	into another branch. For example we might be merging a new feature 
+	branch into the master branch to add the new feature to the currently 
+	working project. When there is merge, the new commit at the merge points 
+	back to both branches and both are reachable from the merge. At this 
+	point we can delete the branch that we merged to the master branch since 
+	this is just a label and we are still connected to this branches commits 
+	at the merged location. 
 
-What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+What are the pros and cons of Git’s automatic merging vs. always doing merges 
+manually?
 
-	The pros of automatically merging are that it makes merging much faster, since you don't have to sift through a bunch of diffs and most likely many lines of code in order to merge two files. The cons are that you might create bugs or there might be conflicts you have to resolve after the merge is done.
+	The pros of automatically merging are that it makes merging much faster,
+	since you don't have to sift through a bunch of diffs and most likely 
+	many lines of code in order to merge two files. The cons are that you 
+	might create bugs or there might be conflicts you have to resolve after 
+	the merge is done.
