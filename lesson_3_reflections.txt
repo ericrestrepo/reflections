@@ -1,7 +1,22 @@
-When would you want to use a remote repository rather than keeping all your work local?
+When would you want to use a remote repository rather than keeping all your
+work local?
 
-	There are a couple of cases where remote repositories are especially useful besides just having another backup of your repository hosted in the cloud in case your computer crashes or gets droped in the toilet. The first reason to use a remote repository is if you are collaborating with others, since they will be able to work on separate branches of the project and push them to the remote location for merging and feedback. The other main reason to use a remote repository is for colaborating with yourself. This is especially useful if you are using multiple machines to work on a project and you want to keep track of your work in one central place.
+	There are a couple of cases where remote repositories are especially
+	useful besides just having another backup of your repository hosted in the
+	cloud in case your computer crashes or gets droped in the toilet. The
+	first reason to use a remote repository is if you are collaborating with
+	others, since they will be able to work on separate branches of the
+	project and push them to the remote location for merging and feedback. The
+	other main reason to use a remote repository is for colaborating with
+	yourself. This is especially useful if you are using multiple machines to
+	work on a project and you want to keep track of your work in one central
+	place.
   
-Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
 
-  	If you have one or many collaborators making changes on the remote repository you might want to wait and evaluate if you want to incorporate those changes into your local version of the code. Also you may want to make sure that there are not obvious problems with the new code.
+  	If you have one or many collaborators making changes on the remote
+  	repository you might want to wait and evaluate if you want to
+  	incorporate those changes into your local version of the code. Also you
+  	may want to make sure that there are not obvious problems with the new
+  	code.
