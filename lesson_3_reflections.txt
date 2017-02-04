@@ -33,3 +33,7 @@ What is the benefit of having a copy of the last known state of the remote store
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 
 	You could just save your files locally and share them through dropbox or Google Drive or through email. The benefit of doing it this way is that it is private and also doesn't cost anything. If you use GitHub and you want to have a private way to collaborate you have to pay for it. There are many downsides to using this method as opposed to using github. If you were not using git and you decided to make a change to a file, you might not be able to save an old version of a file in order to revert to it later. Or you might have to rename the newer version each time making it harder to keep track of your files and also doubling the space that you use each time you save a new copy of your file or files. Another downside is that you might not feel as confident when making a change that you wouldn't screw up your work since you don't have a living history of your files to revert to.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+	You would especially want to do this if you are working colaboratively and you want to get others approval before merging changes. Also, it would make sense to work in this way if your master branch is your working code that needs to be running at all times.
